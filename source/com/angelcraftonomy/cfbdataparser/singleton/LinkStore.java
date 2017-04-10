@@ -12,21 +12,21 @@ import org.apache.commons.io.FilenameUtils;
 import org.jsoup.Connection.Response;
 import org.jsoup.Jsoup;
 
-public class CFBSingleton {
+public class LinkStore {
 	private HashMap<String, String> links;
 	private ArrayList<String> files;
 
 	// Singleton initiation ensures one object creation
-	private static CFBSingleton INSTANCE = null;
+	private static LinkStore INSTANCE = null;
 
-	public static CFBSingleton getInstance() {
+	public static LinkStore getInstance() {
 		if (INSTANCE == null) {
-			INSTANCE = new CFBSingleton();
+			INSTANCE = new LinkStore();
 		}
 		return INSTANCE;
 	}
 
-	private CFBSingleton() {
+	private LinkStore() {
 		links = new HashMap<String, String>();
 		files = new ArrayList<String>();
 	}

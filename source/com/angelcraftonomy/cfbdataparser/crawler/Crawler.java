@@ -7,11 +7,11 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
-import com.angelcraftonomy.cfbdataparser.singleton.CFBSingleton;
+import com.angelcraftonomy.cfbdataparser.singleton.LinkStore;
 
 public class Crawler {
 
-	private CFBSingleton store = CFBSingleton.getInstance();
+	private LinkStore store = LinkStore.getInstance();
 	private int depth;
 	private Document doc;
 

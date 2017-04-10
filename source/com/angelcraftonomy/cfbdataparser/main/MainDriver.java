@@ -1,14 +1,14 @@
 package com.angelcraftonomy.cfbdataparser.main;
 
 import com.angelcraftonomy.cfbdataparser.crawler.Crawler;
-import com.angelcraftonomy.cfbdataparser.singleton.CFBSingleton;
+import com.angelcraftonomy.cfbdataparser.singleton.LinkStore;
 
 public class MainDriver {
 
 	public static void main(String[] args) {
 		long startTime = System.currentTimeMillis();
 
-		CFBSingleton store = CFBSingleton.getInstance();
+		LinkStore store = LinkStore.getInstance();
 		Crawler crawler = new Crawler(0);
 
 		// https://www2.bc.edu/ilker-yuce/Spring11/MT2100102/mt210test.html
